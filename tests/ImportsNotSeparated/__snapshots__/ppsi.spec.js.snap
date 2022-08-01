@@ -30,10 +30,10 @@ import otherthing from "@core/otherthing";
 import something from "@server/something";
 import component from "@ui/hello";
 import fourLevelRelativePath from "../../../../fourLevelRelativePath";
-import threeLevelRelativePath from "../../../threeLevelRelativePath";
-import twoLevelRelativePath from "../../twoLevelRelativePath";
 import oneLevelRelativePath from "../oneLevelRelativePath";
 import sameLevelRelativePath from "./sameLevelRelativePath";
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import twoLevelRelativePath from "../../twoLevelRelativePath";
 
 export { random } from "./random";
 
@@ -140,10 +140,10 @@ import something from "@server/something";
 import component from "@ui/hello";
 import xyz from "@ui/xyz";
 import fourLevelRelativePath from "../../../../fourLevelRelativePath";
-import threeLevelRelativePath from "../../../threeLevelRelativePath";
-import twoLevelRelativePath from "../../twoLevelRelativePath";
 import oneLevelRelativePath from "../oneLevelRelativePath";
 import sameLevelRelativePath from "./sameLevelRelativePath";
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import twoLevelRelativePath from "../../twoLevelRelativePath";
 
 function add(a: number, b: number) {
     return a + b;
@@ -197,15 +197,15 @@ import otherthing from "@core/otherthing";
 import something from "@server/something";
 import component from "@ui/hello";
 import fourLevelRelativePath from "../../../../fourLevelRelativePath";
+import oneLevelRelativePath from "../oneLevelRelativePath";
+// I am stick to sameLevelRelativePath
+import sameLevelRelativePath from "./sameLevelRelativePath";
 import threeLevelRelativePath from "../../../threeLevelRelativePath";
 import twoLevelRelativePath from "../../twoLevelRelativePath";
-import oneLevelRelativePath from "../oneLevelRelativePath";
 // leading comment
 import {
     random, // inner comment
 } from "./random";
-// I am stick to sameLevelRelativePath
-import sameLevelRelativePath from "./sameLevelRelativePath";
 
 // leading comment
 export {

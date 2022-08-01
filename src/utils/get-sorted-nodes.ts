@@ -24,6 +24,8 @@ export const getSortedNodes: GetSortedNodes = (nodes, options) => {
         importOrderGroupNamespaceSpecifiers,
     } = options;
 
+    importOrder = [...importOrder, '<TYPE>'];
+
     const originalNodes = nodes.map(clone);
     const finalNodes: ImportOrLine[] = [];
 

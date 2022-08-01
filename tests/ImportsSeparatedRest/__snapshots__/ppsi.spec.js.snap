@@ -34,10 +34,10 @@ import thirdParty from "third-party";
 import x from "x";
 
 import fourLevelRelativePath from "../../../../fourLevelRelativePath";
-import threeLevelRelativePath from "../../../threeLevelRelativePath";
-import twoLevelRelativePath from "../../twoLevelRelativePath";
 import oneLevelRelativePath from "../oneLevelRelativePath";
 import sameLevelRelativePath from "./sameLevelRelativePath";
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import twoLevelRelativePath from "../../twoLevelRelativePath";
 
 export { random } from "./random";
 
@@ -149,10 +149,10 @@ import thirdParty from "third-party";
 import z from "z";
 
 import fourLevelRelativePath from "../../../../fourLevelRelativePath";
-import threeLevelRelativePath from "../../../threeLevelRelativePath";
-import twoLevelRelativePath from "../../twoLevelRelativePath";
 import oneLevelRelativePath from "../oneLevelRelativePath";
 import sameLevelRelativePath from "./sameLevelRelativePath";
+import threeLevelRelativePath from "../../../threeLevelRelativePath";
+import twoLevelRelativePath from "../../twoLevelRelativePath";
 
 function add(a: number, b: number) {
     return a + b;
@@ -210,15 +210,15 @@ import thirdParty from "third-party";
 import x from "x";
 
 import fourLevelRelativePath from "../../../../fourLevelRelativePath";
+import oneLevelRelativePath from "../oneLevelRelativePath";
+// I am stick to sameLevelRelativePath
+import sameLevelRelativePath from "./sameLevelRelativePath";
 import threeLevelRelativePath from "../../../threeLevelRelativePath";
 import twoLevelRelativePath from "../../twoLevelRelativePath";
-import oneLevelRelativePath from "../oneLevelRelativePath";
 // leading comment
 import {
     random, // inner comment
 } from "./random";
-// I am stick to sameLevelRelativePath
-import sameLevelRelativePath from "./sameLevelRelativePath";
 
 // leading comment
 export {
