@@ -81,8 +81,10 @@ import thirdParty from "third-party";
 import oneLevelRelativePath from "../oneLevelRelativePath";
 import otherthing from "@core/otherthing";
 import abc from "@core/abc";
+import type { UserType } from "../oneLevelRelativePath";
 import twoLevelRelativePath from "../../twoLevelRelativePath";
 import component from "@ui/hello";
+import type { ComponentType } from "@angular/core";
 import fourLevelRelativePath from "../../../../fourLevelRelativePath";
 import something from "@server/something";
 import xyz from "@ui/xyz";
@@ -132,6 +134,9 @@ import threeLevelRelativePathC, {
     nonDefaultModuleE,
 } from "../../../threeLevelRelativePathC";
 import twoLevelRelativePath from "../../twoLevelRelativePath";
+
+import type { ComponentType } from "@angular/core";
+import type { UserType } from "../oneLevelRelativePath";
 
 @Component({
     selector: "app-root",
