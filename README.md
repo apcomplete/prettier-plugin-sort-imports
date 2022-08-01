@@ -1,12 +1,12 @@
 # Prettier plugin sort imports
 
-A prettier plugin to sort import declarations by provided Regular Expression order.
-
-**Note: If you are migrating from v2.x.x to v3.x.x, [Please Read Migration Guidelines](./docs/MIGRATION.md)**
+A prettier plugin to sort import declarations by identifier.  This is a fork of
+[trivago's plugin](https://github.com/trivago/prettier-plugin-sort-imports)
+that sorts by import path.
 
 ### Input
 
-```javascript
+```typescript
 import React, {
     FC,
     useEffect,
@@ -21,6 +21,7 @@ import { createServer } from '@server/node';
 import { Alert } from '@ui/Alert';
 import { repeat, filter, add } from '../utils';
 import { initializeApp } from '@core/app';
+import type { App } from '@core/app';
 import { Popup } from '@ui/Popup';
 import { createConnection } from '@server/database';
 ```
@@ -28,7 +29,7 @@ import { createConnection } from '@server/database';
 
 ### Output
 
-```javascript
+```typescript
 import { debounce, reduce } from 'lodash';
 import React, {
     ChangeEvent,
@@ -49,6 +50,8 @@ import { Popup } from '@ui/Popup';
 
 import { Message } from '../Message';
 import { add, filter, repeat } from '../utils';
+
+import type { App } from '@core/app';
 ```
 
 ### Install
@@ -209,9 +212,6 @@ Having some trouble or an issue ? You can check [FAQ / Troubleshooting section](
 | JS with ES Modules     | ✅ Everything            | -                                                |
 | NodeJS with ES Modules | ✅ Everything            | -                                                |
 | React                  | ✅ Everything            | -                                                |
-| Angular                | ✅ Everything            | Supported through `importOrderParserPlugins` API |
-| Vue                    | ⚠️ Soon to be supported. | Any contribution is welcome.                     |
-| Svelte                 | ⚠️ Soon to be supported. | Any contribution is welcome.                     |
 
 ### Used by
 
