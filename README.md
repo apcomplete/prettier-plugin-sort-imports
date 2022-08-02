@@ -207,20 +207,18 @@ Having some trouble or an issue ? You can check [FAQ / Troubleshooting section](
 | NodeJS with ES Modules | ✅ Everything | -    |
 | React                  | ✅ Everything | -    |
 
-### Used by
-
-Want to highlight your project or company ? Adding your project / company name will help plugin to gain attraction and contribution.
-Feel free to make a Pull Request to add your project / company name.
-
-- [trivago](https://company.trivago.com)
-- ADD YOUR PROJECT / COMPANY NAME
-
 ### Contribution
 
 For more information regarding contribution, please check the [Contributing Guidelines](./CONTRIBUTING.md). If you are trying to
 debug some code in the plugin, check [Debugging Guidelines](./docs/DEBUG.md)
 
 ### Maintainers
+
+| [Alex Padgett](https://github.com/apcomplete)                            |
+| ------------------------------------------------------------------------ |
+| ![apcomplete](https://avatars2.githubusercontent.com/u/717924?s=120&v=4) |
+
+### Original Authors
 
 | [Ayush Sharma](https://github.com/ayusharma)                             | [Behrang Yarahmadi](https://github.com/byara)                         |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------- |
