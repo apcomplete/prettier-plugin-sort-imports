@@ -1,6 +1,6 @@
 # Prettier plugin sort imports
 
-A prettier plugin to sort import declarations by identifier.  This is a fork of
+A prettier plugin to sort import declarations by identifier. This is a fork of
 [trivago's plugin](https://github.com/trivago/prettier-plugin-sort-imports)
 that sorts by import path.
 
@@ -8,49 +8,43 @@ that sorts by import path.
 
 ```typescript
 import React, {
-    FC,
-    useEffect,
-    useRef,
-    ChangeEvent,
-    KeyboardEvent,
+  ChangeEvent,
+  FC,
+  KeyboardEvent,
+  useEffect,
+  useRef,
 } from 'react';
-import { logger } from '@core/logger';
-import { reduce, debounce } from 'lodash';
-import { Message } from '../Message';
-import { createServer } from '@server/node';
 import { Alert } from '@ui/Alert';
-import { repeat, filter, add } from '../utils';
-import { initializeApp } from '@core/app';
-import type { App } from '@core/app';
 import { Popup } from '@ui/Popup';
 import { createConnection } from '@server/database';
+import { createServer } from '@server/node';
+import { debounce, reduce } from 'lodash';
+import { initializeApp } from '@core/app';
+import { logger } from '@core/logger';
+import { Message } from '../Message';
+import { add, filter, repeat } from '../utils';
+import type { App } from '@core/app';
 ```
-
 
 ### Output
 
 ```typescript
-import { debounce, reduce } from 'lodash';
 import React, {
-    ChangeEvent,
-    FC,
-    KeyboardEvent,
-    useEffect,
-    useRef,
+  ChangeEvent,
+  FC,
+  KeyboardEvent,
+  useEffect,
+  useRef,
 } from 'react';
-
-import { createConnection } from '@server/database';
-import { createServer } from '@server/node';
-
-import { initializeApp } from '@core/app';
-import { logger } from '@core/logger';
-
 import { Alert } from '@ui/Alert';
 import { Popup } from '@ui/Popup';
-
+import { createConnection } from '@server/database';
+import { createServer } from '@server/node';
+import { debounce, reduce } from 'lodash';
+import { initializeApp } from '@core/app';
+import { logger } from '@core/logger';
 import { Message } from '../Message';
 import { add, filter, repeat } from '../utils';
-
 import type { App } from '@core/app';
 ```
 
@@ -59,13 +53,13 @@ import type { App } from '@core/app';
 npm
 
 ```shell script
-npm install --save-dev apcomplete-prettier-plugin-sort-imports
+npm install --save-dev prettier-plugin-sort-imports-by-identifier
 ```
 
 or, using yarn
 
 ```shell script
-yarn add --dev apcomplete-prettier-plugin-sort-imports
+yarn add --dev prettier-plugin-sort-imports-by-identifier
 ```
 
 **Note: If you are migrating from v2.x.x to v3.x.x, [Please Read Migration Guidelines](./docs/MIGRATION.md)**
@@ -207,19 +201,19 @@ Having some trouble or an issue ? You can check [FAQ / Troubleshooting section](
 
 ### Compatibility
 
-| Framework              | Supported                | Note                                             |
-| ---------------------- | ------------------------ | ------------------------------------------------ |
-| JS with ES Modules     | ✅ Everything            | -                                                |
-| NodeJS with ES Modules | ✅ Everything            | -                                                |
-| React                  | ✅ Everything            | -                                                |
+| Framework              | Supported     | Note |
+| ---------------------- | ------------- | ---- |
+| JS with ES Modules     | ✅ Everything | -    |
+| NodeJS with ES Modules | ✅ Everything | -    |
+| React                  | ✅ Everything | -    |
 
 ### Used by
 
 Want to highlight your project or company ? Adding your project / company name will help plugin to gain attraction and contribution.
 Feel free to make a Pull Request to add your project / company name.
 
--   [trivago](https://company.trivago.com)
--   ADD YOUR PROJECT / COMPANY NAME
+- [trivago](https://company.trivago.com)
+- ADD YOUR PROJECT / COMPANY NAME
 
 ### Contribution
 
